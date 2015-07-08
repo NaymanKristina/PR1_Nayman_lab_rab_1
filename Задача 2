@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<body>
+
+<script> 
+
+var n = prompt('Введите число n(n >= 0)', ''); 
+var k = prompt('Введите число k(n >= k >= 0).', ''); 
+
+var f=1;
+for(var i=1;i<=k;i++)
+{
+f=f*i;
+}
+
+var t= n-k+1;
+
+var result = 1;
+
+for(i=n;i>=t;i--)
+{
+result = result * i;
+}
+
+result = result/f;
+
+alert(result);
+
+</script>  
+</body> 
+</html>
